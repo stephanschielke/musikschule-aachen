@@ -49,7 +49,7 @@
         var layerSchulen = new OpenLayers.Layer.Markers("Zweigstellen");
 
         // Schulmarker-Eigenschaften
-        var size = new OpenLayers.Size(15, 20);
+        var size = new OpenLayers.Size(30, 30);
         var offset = new OpenLayers.Pixel(-(size.w / 2), -size.h);
 
         // Einlesen des Schulverzeichnisses
@@ -74,7 +74,7 @@
 
 
                         var icon = new OpenLayers.Icon(data[0].icon, size, offset);
-                        icon = new OpenLayers.Icon("http://www.openlayers.org/dev/img/marker-blue.png", size, offset);
+                        icon = new OpenLayers.Icon("./marker.svg", size, offset);
 
 
                         var marker = new OpenLayers.Marker(schoolLonLat, icon);
