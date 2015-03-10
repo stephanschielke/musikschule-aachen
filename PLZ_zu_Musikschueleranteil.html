@@ -74,7 +74,7 @@
 
 
                         var icon = new OpenLayers.Icon(data[0].icon, size, offset);
-                        icon = new OpenLayers.Icon("./marker.svg", size, offset);
+                        icon = new OpenLayers.Icon("./img/marker.svg", size, offset);
 
 
                         var marker = new OpenLayers.Marker(schoolLonLat, icon);
@@ -134,8 +134,8 @@
 
                 var prozentValue = plzSchueler.musikschueler / plzSchueler.bevoelkerung * 100;
 
-                // Formel zum berrechnen des Grünanteils 
-                // MaxProzent-Wert ist 255 und MinProzent-Wert ist 0. 
+                // Formel zum berrechnen des Grünanteils
+                // MaxProzent-Wert ist 255 und MinProzent-Wert ist 0.
                 var colorGreen = Math.round(255 * (((100 / (prozentMaxValue - prozentMinValue)) * (prozentValue - prozentMinValue)) / 100))
 
                 var style = {
